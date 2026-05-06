@@ -13,6 +13,12 @@ This repository contains my assignment work including 7typescript problem & 2 mi
 - ├── blog-2.md
 - └── README.md
 
+## File Link:
+
+- [solutions.ts](https://github.com/mehediweb01/assignment-1/blob/main/solutions.ts)
+- [Blog 1](https://github.com/mehediweb01/assignment-1/blob/main/blog-1.md)
+- [Blog 2](https://github.com/mehediweb01/assignment-1/blob/main/blog-2.md)
+
 ## TypeScript problem:
 
     - 1. Filter Even Number
