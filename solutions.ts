@@ -16,7 +16,8 @@ const checkType = (value: StringOrNumber) => {
   return typeof value === "string" ? "String" : "Number";
 };
 
-(checkType("Hello"), checkType(42));
+checkType("Hello");
+checkType(42);
 
 // problem 4
 const getProperty = <T>(obj: T, key: keyof T): T[keyof T] => {
@@ -83,7 +84,9 @@ student.getDetails();
 
 // problem 7
 const getIntersection = (arr1: number[], arr2: number[]): number[] => {
-  return arr1.filter((num: number) => arr2.includes(num));
+  const commonNumber = arr1.filter((num: number) => arr2.includes(num));
+
+  return [...new Set(commonNumber)];
 };
 
 getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]);
