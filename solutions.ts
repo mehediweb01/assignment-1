@@ -1,21 +1,27 @@
-const filterEvenNumbers = (arr: Array<number>): Array<number> =>
-  arr.filter((num: number) => num % 2 === 0);
-
+// problem 1
+const filterEvenNumbers = (arr: Array<number>): Array<number> => {
+  return arr.filter((num: number) => num % 2 === 0);
+};
 filterEvenNumbers([1, 2, 3, 4, 5, 6]);
 
-const reverseString = (str: string): string => str.split("").reverse().join("");
+// problem 2
+const reverseString = (str: string): string => {
+  return str.split("").reverse().join("");
+};
 
 reverseString("typescript");
 
+// problem 3
 type StringOrNumber = string | number;
 
-const checkType = (value: StringOrNumber) => {
+const checkType = (value: StringOrNumber): StringOrNumber => {
   return typeof value === "string" ? "String" : "Number";
 };
 
 checkType("Hello");
 checkType(42);
 
+// problem 4
 const getProperty = <T>(obj: T, key: keyof T): T[keyof T] => {
   return obj[key];
 };
@@ -28,6 +34,7 @@ const user = {
 
 getProperty(user, "name");
 
+// problem 5
 interface Book {
   title: string;
   author: string;
@@ -49,6 +56,7 @@ const myBook = {
 
 toggleReadStatus(myBook);
 
+// problem 6
 class Person {
   name: string;
   age: number;
@@ -76,6 +84,7 @@ const student = new Student("Alice", 20, "A");
 
 student.getDetails();
 
+// problem 7
 const getIntersection = (arr1: number[], arr2: number[]): number[] => {
   const commonNumber = arr1.filter((num: number) => arr2.includes(num));
 
